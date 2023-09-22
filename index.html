@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="'stylesheet" href="./style.css"/>
-        <title>My Website</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <title>Michael Njogu</title>
+        
+        <link rel="stylesheet" href="./style.css"/>  
     </head>
     <body>
-        <h1>Hello World</h1>
-
+      <nav>
+        <ul>
+          <a href="#home"><li>Home</li></a>
+          <a href="#portfolio"><li>Portfolio</li></a>
+          <a href="#testimonials"><li>Testimonials</li></a>
+        </ul>
+      </nav>
+      <main>
+        <section id="home">
+          <h1>Projects</h1>
+          <div class="carousel">
+            <div id="1"><figcaption> Bible Notepad</figcaption></div>
+            <div id="2"><figcaption> CarApp </figcaption></div>
+            <div id="3"><figcaption> CRUD-App Bot-Battlr</figcaption></div>
+            <div id="4"><figcaption> CRUD-App Bank-Of-Flatiron</figcaption></div>
+          </div>   
+        </section>
+        <section id="portfolio">
+          <h1>About Me</h1>
+          <img id="photo-me" src="./assets/IMG-20220825-WA0002.jpg" alt="An image of the Author"/>   
+        </section>
+        <section id="testimonials">
+          <h1>Testimonials</h1>
+          <div>Testimony container</div>   
+        </section>
+      </main>
+      <footer id="reach-me">
+        <h1>Reach Me!</h1>
+        <div class="address">
+          <img class="footer-img" src="./assets/IMG-20220825-WA0002.jpg" alt="An image of the Author"/>
+          <div class="social-media content">
+            <h2>Socials</h2>
+            <p>Twitter</p>
+            <p>LinkedIn</p>
+            <p>GitHub</p>
+          </div>  
+          <div class="contact-info content">
+            <h2>Contact Me</h2>
+            <span>
+              <label for="phono-no">Contact :</label><p id="phone-no">+254 708 380 360</p>
+            </span>
+            <span>
+              <label for="email">Email :</label>
+            <p id="email">mikeynjogu@gmail.com</p>
+            </span>
+            
+          </div>
+        </div>
+      </footer>
         <script src="./script.js"></script>
     </body>
 </html>

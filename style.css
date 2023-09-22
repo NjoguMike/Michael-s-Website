@@ -1,3 +1,98 @@
-body{
-    background: aqua;
+nav {
+    height: 60px;
+    background-color: rgba(56, 121, 14, 0.87);
+    margin: -8px -8px;
+    padding-top: 10px;
+    position: sticky;
+}
+
+nav ul{
+    font-size: 16px;
+    font-weight: 550;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    list-style: none;
+}
+
+nav li {
+    color: black;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+li:active {
+    color: white;
+    text-decoration: underline;
+}
+li:hover {
+    color: rgb(255, 255, 255);
+}
+
+section{
+    height: 800px;
+}
+
+h1{
+    text-align: center;
+}
+
+#photo-me {
+    display: block;
+    margin: 50px auto;
+    height: 250px;
+    width: 250px;
+    border-radius: 360px;
+}
+
+footer {
+    background-color: rgba(56, 121, 14, 0.87);
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    align-items: center;
+    margin: -8px;
+}
+
+.address {
+    display: flex;
+    flex-direction: row;
+    max-width: 800px;
+    margin: auto 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content {
+    padding: 10px 40px;
+    height: 200px;
+    width: auto;
+    border-radius: 8px;
+    margin: 10px 30px;
+    background-color: rgba(255, 255, 255, 0.342);
+}
+.content:hover {
+    font-weight: 600;
+    color: azure;
+    background-color: rgba(136, 167, 149, 0.377);
+}
+
+h2 {
+    text-align: center;
+}
+
+span {
+    display: block;
+}
+label {
+    display: inline-block;
+}
+
+#email, #phone-no {
+    display: inline-block;
+}
+
+.footer-img {
+    height: 150px;
+    width: 150px;
+    border-radius: 360px;
 }
