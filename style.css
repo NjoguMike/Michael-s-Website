@@ -1,6 +1,6 @@
 nav {
     height: 60px;
-    background-color: rgba(56, 121, 14, 0.87);
+    background-color: #338F79;
     margin: -8px -8px;
     padding-top: 10px;
     position: sticky;
@@ -30,6 +30,10 @@ li:hover {
 
 section{
     height: 800px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
 }
 
 h1{
@@ -38,42 +42,56 @@ h1{
 
 #photo-me {
     display: block;
-    margin: 50px auto;
-    height: 250px;
-    width: 250px;
-    border-radius: 360px;
+    margin: 20px auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
 }
 
 footer {
-    background-color: rgba(56, 121, 14, 0.87);
+    color: rgb(255, 255, 255);
+    background-color: #338F79;
     display: flex;
     flex-direction: column;
-    height: 400px;
     align-items: center;
+    justify-content: center;
     margin: -8px;
+    padding: 50px;
 }
 
 .address {
     display: flex;
     flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
     max-width: 800px;
     margin: auto 10px;
-    align-items: center;
-    justify-content: space-between;
+    align-content: center;
+    justify-content: center;
 }
 
 .content {
     padding: 10px 40px;
-    height: 200px;
+    flex-shrink: 1;
+    flex-wrap: nowrap;
+    height: auto;
     width: auto;
     border-radius: 8px;
     margin: 10px 30px;
     background-color: rgba(255, 255, 255, 0.342);
 }
-.content:hover {
-    font-weight: 600;
-    color: azure;
-    background-color: rgba(136, 167, 149, 0.377);
+.content a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:active {
+    color: white;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
 }
 
 h2 {
@@ -82,7 +100,9 @@ h2 {
 
 span {
     display: block;
+    padding: 4px;
 }
+
 label {
     display: inline-block;
 }
@@ -92,13 +112,104 @@ label {
 }
 
 .footer-img {
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     border-radius: 360px;
+    margin: 10px;
 }
 
 #contact-img{
     margin: 0 10px;
     width: 25px;
     height: 100%;
+}
+
+
+
+#testimonials {
+  background: #f5f0f0;
+
+}
+
+.testimonials {
+    display: flex;
+    flex-flow: row wrap;
+    height: auto;
+    flex-shrink: 1;
+    padding: 15px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+  
+  }
+
+.testimonial-drafts {
+    display: flex;
+    flex-flow: column nowrap;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+.first-testimonial {
+  color: #000000;
+  font: 400 16px "Inika", sans-serif;
+  width: auto;
+  height: auto;
+  margin: 30px;
+  padding: 15px 20px;
+  flex-shrink: 1;
+  border-radius: 8px;
+  background-color: rgba(172, 172, 172, 0.616);
+}
+/* .heart-icon {
+  position: absolute;
+  left: 190px;
+  top: 359px;
+  overflow: visible;
+} */
+
+.random_quote {
+  text-align: center;
+  font: 400 18px "Inika", sans-serif;
+  width: 302px;
+  height: 273px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.qualifications {
+  display: flex;
+  flex-flow: row wrap;
+  flex-shrink: 1;
+  flex-basis: 200;
+  align-items:flex-start;
+}
+
+.quali-container {
+  background: rgba(190, 188, 188, 0.63);
+  border-radius: 8px;
+  margin: 10px auto;
+  width: 200px;
+  height: 282px;
+}
+
+h3 {
+  color: rgba(3, 117, 90, 0.81);
+  text-align: center;
+  font: 700 18px "Inika", sans-serif;
+}
+
+.accomplishments {
+  max-width: 50%;
+  color: #000000;
+  text-align: center;
+  margin: 10px auto;
+  font: 700 18px "Inika", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -6,7 +6,8 @@
         
         <title>Michael Njogu</title>
         
-        <link rel="stylesheet" href="./style.css"/>  
+        <link rel="stylesheet" href="./style.css"/>
+        <link rel="stylesheet" href="bootstrap.min.css" />  
     </head>
     <body>
       <nav>
@@ -19,6 +20,27 @@
       <main>
         <section id="home">
           <h1>Projects</h1>
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/images/" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
           <div class="carousel">
             <div id="1"><figcaption> Bible Notepad</figcaption></div>
             <div id="2"><figcaption> CarApp </figcaption></div>
@@ -27,12 +49,28 @@
           </div>   
         </section>
         <section id="portfolio">
-          <h1>About Me</h1>
-          <img id="photo-me" src="./assets/images/IMG-20220825-WA0002.jpg" alt="An image of the Author"/>   
+          <h1 class="portfolio2">About Me</h1>
+          <img id="photo-me" src="./assets/images/IMG-20220825-WA0002.jpg" alt="An image of the Author"/>  
+          <div class="qualifications">
+            <div class="quali-container">
+              <h3>Past</h3>
+            </div>
+            <div class="quali-container">
+              <h3>Current Goals</h3>
+            </div>
+            <div class="accomplishments">Relevant Accomplishments</div>
+          </div> 
         </section>
         <section id="testimonials">
           <h1>Testimonials</h1>
-          <div>Testimony container</div>   
+          <div class="testimonials">
+            <p class="random_quote"> “This is a random encouraging quote” </p>
+            <div class="testimonial-drafts">
+                <div class="first-testimonial">First testimonial</div>
+                <div class="first-testimonial">Second testimonial</div>
+                <div class="first-testimonial">Third testimonial</div>
+            </div>
+          </div>
         </section>
       </main>
       <footer id="reach-me">
@@ -41,18 +79,25 @@
           <img class="footer-img" src="./assets/images/IMG-20220825-WA0002.jpg" alt="An image of the Author"/>
           <div class="social-media content">
             <h2>Socials</h2>
-            <p>Twitter</p>
-            <p>LinkedIn</p>
-            <p>GitHub</p>
+            <span>
+              <img id="twitter" src="./assets/images/Twitter Icon.svg"/> @Njogu_Mike
+            </span>
+            <span>
+              <img id="linked_in" src="./assets/images/Linked In.svg"/>
+              <a href="https://www.linkedin.com/in/michael-njogu-527558142">MichaelNjogu@linkedIn</a>
+            </span>
+            <span>
+              <img id="github" src="./assets/images/github.svg"/>
+              <a href="https://github.com/NjoguMike">NjoguMike@gitHub</a>
+            </span>
           </div>  
           <div class="contact-info content">
             <h2>Contact Me</h2>
             <span>
-              <img id="contact-img" src="./assets/images/phone.png"/><p id="phone-no">+254 708 380 360</p>
+              <img id="contact-img" src="./assets/images/Contact Icon.svg"/><p id="phone-no">+254 708 380 360</p>
             </span>
             <span>
-              <label for="email">Email :</label>
-            <p id="email">mikeynjogu@gmail.com</p>
+              <img id="email-img" src="./assets/images/Enail Icon.svg"/><p id="email">mikeynjogu@gmail.com</p>
             </span>
             
           </div>
