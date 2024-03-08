@@ -9,100 +9,152 @@
         <link rel="stylesheet" href="./style.css"/>
         <link rel="stylesheet" href="bootstrap.min.css" />  
     </head>
-    <body>
-      <nav>
-        <ul>
-          <a href="#home"><li>Home</li></a>
-          <a href="#portfolio"><li>Portfolio</li></a>
-          <a href="#testimonials"><li>Testimonials</li></a>
-        </ul>
-      </nav>
-      <main>
-        <section id="home">
-          <h1>Projects</h1>
-          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./assets/images/" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
+    <body id="port-body">
+      <div>
+        <nav>
+          <ul>
+            <a href="#home"><li class="active">Home</li></a>
+            <a href="#portfolio"><li>Portfolio</li></a>
+            <a href="#testimonials"><li>Testimonials</li></a>
+            <a href="#"><li>Projects</li></a>
+          </ul>
+        </nav>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ridce="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/images/landscape.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <a href="#"><h5>Bible Notepad</h5></a>
+                <p>Some representative placeholder content for the first slide.</p>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <div class="carousel-item">
+              <img src="./assets/images/bank-of-flatiron.png" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <a href="#"><h5>CRUD-App Bank-Of-Flatiron</h5></a>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/bot-battlr.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <a href="#"><h5>CRUD-App Bot-Battlr</h5></a>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
           </div>
-          <div class="carousel">
-            <div id="1"><figcaption> Bible Notepad</figcaption></div>
-            <div id="2"><figcaption> CarApp </figcaption></div>
-            <div id="3"><figcaption> CRUD-App Bot-Battlr</figcaption></div>
-            <div id="4"><figcaption> CRUD-App Bank-Of-Flatiron</figcaption></div>
-          </div>   
-        </section>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>  
         <section id="portfolio">
           <h1 class="portfolio2">About Me</h1>
           <img id="photo-me" src="./assets/images/IMG-20220825-WA0002.jpg" alt="An image of the Author"/>  
-          <div class="qualifications">
-            <div class="quali-container">
-              <h3>Past</h3>
+          <div class="career-journey">
+            <div class="expertise">
+              <h3>Expertise</h3>
+                <ul>
+                  <span><img src="./assets/images/icons8-backend-development.gif" alt="software dev gif"/><li>Software Development</li></span>
+                  <span><img src="./assets/images/fitness-consultation.png" alt="fitness consultation"/><li>Fitness Consultancy</li></span>
+                  <span><img src="./assets/images/grouptraining.png" alt="group training"/><li>Group Fitness Training</li></span>
+                  <span><img src="./assets/images/coach.png" alt="fitness coach"/><li>Gym Instructor</li></span>
+                </ul>
             </div>
-            <div class="quali-container">
-              <h3>Current Goals</h3>
-            </div>
-            <div class="accomplishments">Relevant Accomplishments</div>
-          </div> 
+            <div class="skills">
+              <div class="tech">
+                <h3>Tech Qualifications</h3>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Python</li>
+                  <li>React</li>
+                  <li>Flask</li>
+                  <li>SQL</li>
+                </ul>
+              </div>
+              <div class="tech">
+                <h3>Other Qualifications</h3>
+                <ul>
+                  <li>Personal Training</li>
+                  <li>Curriculum Development</li>
+                  <li>Training Program Creation</li>
+                  <li>Corrective Exercise Training</li>
+                  <li>Research</li>
+                  <li>Data Collection</li>
+                </ul>
+              </div>
+            </div> 
+          </div>
         </section>
         <section id="testimonials">
           <h1>Testimonials</h1>
           <div class="testimonials">
-            <p class="random_quote"> “This is a random encouraging quote” </p>
+            <div class="test-details">
+              <p class="random_quote"> “This is a random encouraging quote” </p>
+              <button>View Projects</button>
+            </div>
             <div class="testimonial-drafts">
-                <div class="first-testimonial">First testimonial</div>
-                <div class="first-testimonial">Second testimonial</div>
-                <div class="first-testimonial">Third testimonial</div>
+                <div class="first-testimonial">
+                  <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius id veritatis reiciendis sed, molestiae nisi cum quasi, placeat eos voluptate, iusto nulla est aliquid voluptas veniam voluptatum beatae nostrum soluta.</q>
+                  <p> ~ First testimonial </p>
+                </div>
+                <div class="first-testimonial">
+                  <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius id veritatis reiciendis sed, molestiae nisi cum quasi, placeat eos voluptate, iusto nulla est aliquid voluptas veniam voluptatum beatae nostrum soluta.</q>
+                  <p> ~ Second testimonial </p>
+                </div>
+                <div class="first-testimonial">
+                  <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius id veritatis reiciendis sed, molestiae nisi cum quasi, placeat eos voluptate, iusto nulla est aliquid voluptas veniam voluptatum beatae nostrum soluta.</q>
+                  <p> ~ Third testimonial</p>
+                </div>
             </div>
           </div>
         </section>
-      </main>
+      </div>
       <footer id="reach-me">
-        <h1>Reach Me!</h1>
-        <div class="address">
+        <div class="author">
+          <h1>Reach Me!</h1>
           <img class="footer-img" src="./assets/images/IMG-20220825-WA0002.jpg" alt="An image of the Author"/>
+        </div>
+        <div class="address">
           <div class="social-media content">
             <h2>Socials</h2>
-            <span>
-              <img id="twitter" src="./assets/images/Twitter Icon.svg"/> @Njogu_Mike
-            </span>
-            <span>
-              <img id="linked_in" src="./assets/images/Linked In.svg"/>
-              <a href="https://www.linkedin.com/in/michael-njogu-527558142">MichaelNjogu@linkedIn</a>
-            </span>
-            <span>
-              <img id="github" src="./assets/images/github.svg"/>
-              <a href="https://github.com/NjoguMike">NjoguMike@gitHub</a>
-            </span>
+            <div>
+              <span>
+                <img id="twitter" src="./assets/images/Twitter Icon.svg"/>
+                <a href="https://twitter.com/NjoguMb">@Njogu_Mike</a>
+              </span> 
+              <span>
+                <img id="linked_in" src="./assets/images/Linked In.svg"/>
+                <a href="https://www.linkedin.com/in/michael-njogu-527558142">MichaelNjogu@linkedIn</a>
+              </span>
+              <span>
+                <img id="github" src="./assets/images/github.svg"/>
+                <a href="https://github.com/NjoguMike">NjoguMike@gitHub</a>
+              </span>
+            </div>
           </div>  
-          <div class="contact-info content">
+          <div class="content">
             <h2>Contact Me</h2>
-            <span>
-              <img id="contact-img" src="./assets/images/Contact Icon.svg"/><p id="phone-no">+254 708 380 360</p>
-            </span>
-            <span>
-              <img id="email-img" src="./assets/images/Enail Icon.svg"/><p id="email">mikeynjogu@gmail.com</p>
-            </span>
-            
+            <div>
+              <span>
+                <img id="contact-img" src="./assets/images/Contact Icon.svg"/>
+                <a id="phone-no">+254 708 380 360</a>
+              </span>
+              <span>
+                <img id="email-img" src="./assets/images/Enail Icon.svg"/>
+                <a id="email">mikeynjogu@gmail.com</>
+              </span>
+            </div>
           </div>
         </div>
       </footer>
         <script src="./script.js"></script>
+        <script src="./bootstrap.min.js"></script>
     </body>
 </html>
