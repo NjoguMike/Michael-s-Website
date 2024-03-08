@@ -78,7 +78,6 @@ section{
 }
 
 
-
 #portfolio{
     display: flex;
     flex-direction: column;
@@ -163,6 +162,17 @@ section{
                     }
                 }
             }
+
+            button{
+                float: left;
+                border: none;
+                border-radius: 6px;
+                margin: 10px 5px;
+                padding: 5px 10px;
+                font-weight: bold;
+                color: #0E5C6A;
+                background: #fff;
+            }
         }
       }
 }
@@ -192,7 +202,7 @@ section{
             button{
                 width: 8rem;
                 border: none;
-                padding: 2px 15px;
+                padding: 5px 15px;
                 border-radius: 4px;
                 color: #fff;
                 background-color: #0E5C6A;
@@ -240,6 +250,8 @@ section{
   }
 
 footer {
+    position: relative;
+    bottom: 0;
     height: 500px ;
     width: 100%;
     color: rgb(255, 255, 255);
@@ -318,5 +330,47 @@ footer {
     }
 }
 
+#project-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 20px;
+    margin: 20px 0;
+    padding: 20px 30px;
 
+    .project-card{
+        width: 25vw;
+        height: auto;
+        border: none;
+        border-radius: 8px;
+        text-align: center;
+
+        h3{
+            position: absolute;
+            text-align: center;
+            font-size: 1em;
+            color: #0E5C6A;
+            font-weight: 550;
+        }
+        
+        img{
+            width: 100%;
+            height: 20vh;
+            border-radius: 8px 8px 0 0;
+        }
+
+        p{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 4vh;
+            background-color: #0E5C6A;
+            color: #fff;
+            border-radius: 0 0 8px 8px;
+        }
+    }
+}
 
