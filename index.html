@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -7,11 +7,11 @@
         <title>Michael Njogu</title>
         
         <link rel="stylesheet" href="./style.css"/>
-        <link rel="stylesheet" href="bootstrap.min.css" />  
+        <!-- <link rel="stylesheet" href="bootstrap.min.css" />   -->
     </head>
     <body id="port-body">
       <div>
-        <nav>
+        <nav class="design">
           <ul>
             <a href="#home"><li class="active">Home</li></a>
             <a href="#portfolio"><li>Portfolio</li></a>
@@ -19,39 +19,12 @@
             <a href="projects.html"><li>Projects</li></a>
           </ul>
         </nav>
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ridce="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./assets/images/Bible_Notepad.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <a href="#"><h5>Bible Notepad</h5></a>
-                <p>Individual project. Half active server, but functional.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/images/MarketApp.png" class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
-                <a href="#"><h5>E-commerce App</h5></a>
-                <p>Second group project. An e-commerce site, with active development every so often.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/images/LMS.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <a href="#"><h5>A Learning Management System</h5></a>
-                <p> A learning management system that applies both a functional server with effective client-side routing. Have a full view on the projects tab.</p>
-              </div>
-            </div>
+        <section class="landing">
+          <div class="intro_text">
+            <q>This is who I am</q>
+            <p>Hi there! This is your friendly savvy Software Developer. Hit that button below <span><img src="assets/images/pointing.png"/></span> to explore.</p>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>  
+        </section>
         <section id="portfolio">
           <h1 class="portfolio2">About Me</h1>
           <img id="photo-me" src="./assets/images/IMG-20220825-WA0002.jpg" alt="An image of the Author"/>  
